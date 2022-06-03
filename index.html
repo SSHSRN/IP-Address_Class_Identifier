@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identifying class of Ipv4 Address</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter the 4 octets of the IPv4 address in decimal notation.</p>
+        <input id="first_octet" type="number" value="0"> .
+        <input id="second_octet" type="number" value="0"> .
+        <input id="third_octet" type="number" value="0"> .
+        <input id="fourth_octet" type="number" value="0"><br>
+        <button type="submit" onclick="fetchres()">Submit</button>
+    </div>
+
+    <div class="res_container" id="res_container" style="display: none;">
+        <p>The given IPv4 address in decimal notation is: <span id="doctet_first"></span> . <span id="doctet_second"></span> . <span id="doctet_third"></span> . <span id="doctet_fourth"></span></p>
+        <p>The given IPv4 address in binary notation is: <span id="boctet_first"></span> . <span id="boctet_second"></span> . <span id="boctet_third"></span> . <span id="boctet_fourth"></span></p>
+        <p>The given IPv4 address belongs to class: <span id="classname"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
